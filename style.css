@@ -283,6 +283,9 @@ svg{fill:currentColor}
   .mob-pasek a svg{width:18px;height:18px;fill:var(--zielony)}
   .mob-pasek .mp-cta{background:var(--zloty);border-color:var(--zloty)}
 }
+@media (max-width:440px){
+  .logo-tx .lt-d{display:none}
+}
 @media (max-width:370px){
   .logo-tx span{display:none}
   .hero-lead{font-size:16px}
