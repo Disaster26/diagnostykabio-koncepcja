@@ -71,6 +71,9 @@
 
   /* formularz pokazowy - bez wysyłki */
   var form = document.getElementById('form');
+  [].forEach.call(document.querySelectorAll('[data-gdzie]'), function (a) {
+    a.addEventListener('click', function () { form.gdzie.value = a.dataset.gdzie; });
+  });
   var info = document.getElementById('form-info');
   form.addEventListener('submit', function (e) {
     e.preventDefault();
